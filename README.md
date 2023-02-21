@@ -1,7 +1,11 @@
 # klotho-node-aws
 Klotho Express AWS Project
 
+Node v18
+
 ```
+npm install
+
 npm start
 curl http://localhost:3000/
 ```

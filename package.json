@@ -23,9 +23,11 @@
     "@types/node": "^18.14.0",
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
+    "uuid": "^9.0.0",
     "wifi-qr-code-generator": "^1.1.1"
   },
   "devDependencies": {
+    "@types/uuid": "^9.0.0",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"

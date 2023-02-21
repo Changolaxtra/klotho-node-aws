@@ -2,6 +2,7 @@
 import express from 'express';
 import { generateWifiQRCode } from 'wifi-qr-code-generator';
 import { qrWifiRequest } from './dto/requests';
+import { save } from './service/data';
 
 // Initialize the express engine
 const app: express.Application = express();
@@ -38,7 +39,7 @@ app.post('/qrWifi', (_req, _res) => {
 	})
 
 	pr.then((data) => {
-		console.log(data);
+		save(request);
 		_res.send(data);
 	})
 	

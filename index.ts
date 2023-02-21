@@ -14,7 +14,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Take a port 3000 for running server.
 const port: number = 3000;
 
-// Server setup
+/* @klotho::expose {
+ *  id = "qr-wifi-api"
+ *  target = "public"
+ *  description = "Exposes the QR Wifi API to the internet"
+ * }
+ */
 app.listen(port, () => {
 	console.log(`TypeScript with Express
 		http://localhost:${port}/`);
